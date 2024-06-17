@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="index.html" class="link">Back</a>
+    <h1 class="heading">
+        Disk Scheduling
+    </h1>
+    <h2 class="paragraph">Enter your disk requests and head position (assumed constraints between 0 and 199)</h1>
+
+    <form id="inputForm" class="form">
+        <input type="text" id="requests" placeholder="e.g., 98,183,37,122,14,124,65,67" class="inputLarge">
+        <input type="number" id="initial" placeholder="e.g., 53" min="0" max="199" class="inputSmall">
+        <label>Pick a direction</label>
+        <select name="direction" id="direction" class="inputSmall">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+        <button type="submit" class="button">Calculate</button>
+    </form>
+    <div class="container" id="content">
+        <div class="algoBox">
+            <h3>FCFS</h3>
+            <canvas id="fcfs" width="1200" height="500" >
+    
+            </canvas>
+            <label id="fcfsOver">
+
+            </label>
+        </div>
+        <div class="algoBox">
+            <h3>SSTF</h3>
+            <canvas id="sstf" width="1200" height="500">
+    
+            </canvas>
+            <label id="sstfOver">
+
+            </label>
+        </div>
+        <div class="algoBox">
+            <h3>SCAN</h3>
+            <canvas id="scan" width="1200" height="500">
+    
+            </canvas>
+            <label id="scanOver">
+
+            </label>
+        </div>
+        <div class="algoBox">
+            <h3>CSCAN</h3>
+            <canvas id="cscan" width="1200" height="500">
+    
+            </canvas>
+            <label id="cscanOver">
+
+            </label>
+        </div>
+        <div class="algoBox">
+            <h3>LOOK</h3>
+            <canvas id="look" width="1200" height="500">
+    
+            </canvas>
+            <label id="lookOver">
+
+            </label>
+        </div>
+        <div class="algoBox">
+            <h3>CLOOK</h3>
+            <canvas id="clook" width="1200" height="500">
+    
+            </canvas>
+            <label id="clookOver">
+
+            </label>
+        </div>
+    </div>
+    
+</body>
+<script src="diskScript.js"></script>
+</html>

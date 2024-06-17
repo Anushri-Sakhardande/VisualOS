@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process scheduling</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html" class="link">Back</a>
+    <h1 class="heading">
+        Process scheduling
+    </h1>
+    <h2 class="paragraph">
+        Enter the number of processes and time quantum (for Round Robin only)
+    </h2>
+    <form class="form" id="form">
+        <input type="number" min="1" max="10" class="inputSmall" id="rowNumber" placeholder="No. of process">
+        <input type="number" min="1" class="inputSmall" id="quantum" placeholder="Time quantum">
+        <button type="submit" class="button container" id="calcButton" >Calculate</button>
+    </form>
+    <div class="mainContainer">
+        <table class="container" id="processTable">
+            <thead>
+                <tr>
+                    <th>Process ID</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="container" id="content"> 
+            <div class="algoBox">
+                <h3>
+                    FCFS
+                </h3>
+                <canvas id="fcfsCanvas" width="1200">
+
+                </canvas>
+            </div>
+            <div class="algoBox">
+                <h3>
+                    Non Preemptive SJF
+                </h3>
+                <canvas id="npSJFCanvas" width="1200">
+                    
+                </canvas>
+            </div>
+            <div class="algoBox">
+                <h3>
+                    Preemptive SJF
+                </h3>
+                <canvas id="pSJFCanvas" width="1200">
+                    
+                </canvas>
+            </div>
+            <div class="algoBox">
+                <h3>
+                    Non Preemptive Priority 
+                </h3>
+                <canvas id="npPriCanvas" width="1200">
+                    
+                </canvas>
+            </div>
+            <div class="algoBox">
+                <h3>
+                    Preemptive Priority
+                </h3>
+                <canvas id="pPriCanvas" width="1200">
+                    
+                </canvas>
+            </div>
+            <div class="algoBox">
+                <h3>
+                    Round robin
+                </h3>
+                <canvas id="RRCanvas" width="1200">
+                    
+                </canvas>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="processScript.js"></script>
+</html>

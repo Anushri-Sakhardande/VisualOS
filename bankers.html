@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="index.html" class="link">Back</a>
+    <h1 class="heading">
+        Banker's Algorithm
+    </h1>
+    <h2 class="paragraph">Enter the number processes and the resources</h1>
+        <form id="form" class="form">
+            <input type="number" min="1" class="inputSmall" id="ProcNo" placeholder="No. of process">
+            <input type="number" min="1" class="inputSmall" id="ResNo" placeholder="No. of resources">
+            <button type="submit" class="button container" id="calcButton" >Calculate</button>
+        </form>
+        <div class="mainContainer container" id="tables">
+            <h3>
+                Available resources
+            </h3>
+            <table id="availTable">
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <h3>
+                Allocation
+            </h3>
+            <table id="allocTable">
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <h3>
+                Maximum
+            </h3>
+            <table id="maxTable">
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>    
+        <label class="container" id="safeSequence">
+            Safe sequence:
+        </label>
+</body>
+<script src="bankerScript.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Replacement Algorithm</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="index.html" class="link">Back</a>
+    <h1 class="heading">
+        Page Replacement
+    </h1>
+    <h2 class="paragraph">Enter your reference string and frame size</h1>
+        <form id="inputForm" class="form">
+            <input id="refString" placeholder="Reference String (e.g., 1,2,3)" class="inputLarge">
+            <input type="number" min="0" max="10" id="frameSize" placeholder="Frame size (e.g. 3)" class="inputSmall">
+            <button type="submit" class="button">Calculate</button>
+        </form>
+        <div class="container" id="content">
+            <div class="algoBox">
+                <h3>FIFO</h3>
+                <table id="fifoTable" class="table">
+
+                </table>
+                <label id="fifoLabel">
+
+                </label>
+            </div>
+            <div class="algoBox">
+                <h3>LRU</h3>
+                <table id="lruTable">
+
+                </table>
+                <label id="lruLabel">
+
+                </label>
+            </div>
+            <div class="algoBox">
+                <h3>Optimal</h3>
+                <table id="optTable">
+
+                </table>
+                <label id="optLabel">
+
+                </label>
+            </div>
+        </div>
+</body>
+<script src="pageScript.js"></script>
+
+</html>
